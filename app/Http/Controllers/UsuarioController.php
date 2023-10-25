@@ -29,7 +29,7 @@ class UsuarioController extends Controller
         $usuario->password = $request->input("password");
         $usuario->save();
         
-        return redirect('usuario.inicio');
+        return redirect()->route('usuario.inicio');
     }
 
     public function edit($id){

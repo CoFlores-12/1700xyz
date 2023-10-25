@@ -5,10 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Usuario extends Model
+class Publicacion extends Model
 {
     use HasFactory;
-    public $incrementing = false;
-    protected $primaryKey = 'usuario';
+    
+    protected $fillable = [
+        'idUsuario',
+        'descripcion'
+    ];
+
+    protected $table = 'publicaciones';
     public $timestamps = false;
 }

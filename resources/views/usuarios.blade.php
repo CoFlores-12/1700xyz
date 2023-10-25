@@ -38,8 +38,8 @@
                 <td>{{$item->nombre}}</td>
                 <td>{{$item->apellido}}</td>
                 <td>{{$item->correo}}</td>
-                <td><a class="btn btn-primary" href="{{ route('usuario.crear') }}">Ver</a></td>
-                <td><a class="btn btn-primary" href="{{ route('usuario.crear') }}">Crear</a></td>
+                <td><a class="btn btn-primary" href="{{ route('publicacion.ver', $item->usuario) }}">Ver</a></td>
+                <td><a class="btn btn-primary" href="{{ route('publicacion.crear', $item->usuario) }}">Crear</a></td>
                 <td>
                   <a class="btn btn-success" href="{{ route('usuario.edit', $item->usuario) }}">Editar</a>
                 </td>
